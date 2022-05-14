@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>PronounceMyName</title>
+  </head>
+  <body>
+
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        var inputName = document.getElementById("inputName").value;
+        audio.src = "http://localhost:4105/name/"+inputName;
+        audio.play();
+      }
+    </script>
+    <table border="0" align="center">
+      <tr><td>Enter Name:&nbsp;<input type="text" id="inputName" />
+        <input type="button" value="PLAY" onclick="play()"></td></tr>
+        <tr><td><audio controls id="audio"></audio></td></tr>
+    </table>
+  </body>
+</html>
