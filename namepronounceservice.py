@@ -18,5 +18,5 @@ def streamwav(name):
 
 if __name__ == "__main__":
     app.debug = False
-    app.run(port=4105)
+    app.run()
 
